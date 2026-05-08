@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#box{
+    height: 95%;
+    width: 95%;
+    background-color: #FFC800;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+#box #innerbox{
+    height: 100%;
+    width: 45%;
+    background-color: #fdf3d0;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    border-radius:0 15px 15px 0;
+}
+
+.image{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+.logo{
+    transform: scale(0.15);
+    position: absolute;
+    left: -800px;
+    top: -265px;
+}
+
+.text{
+    height: 350px;
+    width: 500px;
+    position: absolute;
+    left: 8%;
+    top: 25%;
+}
+
+#text {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+.gen {
+    font-family:sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-family: serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    width: 80%;
+}
+
+.counter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    right: -350px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.menu span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: black;
+}
+
+.dots {
+    position: absolute;
+    right: -25%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dot {
+    width: 30px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FFC800;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+#ball {
+    position: absolute;
+    top: 75%;
+    opacity: 0.3;
+}
