@@ -1,129 +1,137 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     height: 100%;
     width: 100%;
     background-color: white;
 }
 
-#box{
+#box {
     height: 95%;
     width: 95%;
     background-color: #FFC800;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid white;
     border-radius: 15px;
-    overflow: hidden
+    overflow: hidden;
 }
 
-#box #innerbox{
+
+#box #innerbox {
+    position: absolute;
+    right: 0;
+    top: 0;
     height: 100%;
     width: 45%;
     background-color: #fdf3d0;
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    border-radius:0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
 }
 
-.image{
+.logo {
     position: absolute;
-    left: 60%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
+    top: 40px;
+    left: 40px;
+    width: 250px;
 }
 
-.logo{
-    transform: scale(0.15);
-    position: absolute;
-    left: -800px;
-    top: -265px;
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.text{
-    height: 350px;
-    width: 500px;
-    position: absolute;
-    left: 8%;
-    top: 25%;
-}
-
-#text {
+.text {
     position: absolute;
     left: 5%;
     top: 50%;
     transform: translateY(-50%);
-    width: 30%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .gen {
-    font-family:sans-serif;
-    font-size: 25px;
+    font-family: sans-serif;
+    font-size: clamp(14px, 1.5vw, 22px);
     font-weight: 700;
     letter-spacing: 3px;
-    margin-bottom: 10px;
 }
 
 .name {
     font-family: serif;
-    font-size: 100px;
+    font-size: clamp(48px, 7vw, 100px);
     font-weight: 900;
     line-height: 1;
-    margin-bottom: 20px;
 }
 
 .desc {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: clamp(12px, 1.2vw, 18px);
     line-height: 1.6;
-    margin-bottom: 25px;
-    width: 80%;
+    width: 75%;
 }
 
 .counter {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: clamp(12px, 1.2vw, 18px);
     font-weight: 800;
     letter-spacing: 2px;
 }
 
+
+.image {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .menu {
     position: absolute;
-    top: 0px;
-    right: -350px;
+    top: 10px;
+    right: -200px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     cursor: pointer;
 }
 
 .menu span {
     display: block;
-    width: 50px;
-    height: 5px;
+    width: 30px;
+    height: 4px;
     background-color: black;
+    border-radius: 2px;
 }
+
 
 .dots {
     position: absolute;
-    right: -25%;
+    right: -200px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 14px;
 }
 
 .dot {
-    width: 30px;
-    height: 15px;
+    width: 14px;
+    height: 8px;
     border-radius: 50%;
     background-color: #FFC800;
 }
@@ -134,6 +142,14 @@ html,body{
 
 #ball {
     position: absolute;
-    top: 75%;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
     opacity: 0.3;
+}
+
+#ball img {
+    width: 100%;
+    height: auto;
+    display: block;
 }

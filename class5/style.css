@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+}
+
+.child1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+.child2
+{
+    height: 200px;
+    width: 200px;
+    background-color: seagreen;
+}
+
+.child3
+{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
