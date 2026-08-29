@@ -1,5 +1,8 @@
 const bulb = document.querySelector('.bulb');
-const btn = document.querySelector("button");
+const btn = document.querySelector("#a1");
+
+const form = document.querySelector('input')
+const btn2 = document.querySelector('#a2')
 
 /* let flag= true;
 
@@ -24,4 +27,8 @@ btn.addEventListener("click", function(){
     else{
         btn.innerText="On"
     }
+});
+
+btn2.addEventListener('click', () => {
+    console.log(form.value)
 });
